@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-tooltip-extension",
+  "description": "Extension to bootstrap tooltip to add 4 extra positions",
+  "version": "0.0.1",
+  "keywords": [
+    "bootstrap",
+    "jquery",
+    "teambox"
+  ],
+  "homepage": "https://github.com/p3drosola/Backbone.VirtualCollection",
+  "authors": [
+    "Andres Gutierrez<andresgutgon@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/p3drosola/Backbone.VirtualCollection"
+  },
+  "dependencies": {
+    "bootstrap": "*",
+    "jquery": "*"
+  },
+  "ender": "./bootstrap-tooltip-extension.js",
+}
