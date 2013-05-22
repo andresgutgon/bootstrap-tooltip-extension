@@ -1,5 +1,5 @@
 /* ===========================================================
- * bootstrap-tooltip-extension.js
+ * bootstrap-tooltip-extension.js v0.0.1
  * https://github.com/andresgutgon/bootstrap-tooltip-extension
  * ===========================================================
  *
