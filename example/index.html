@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tooltip Extension</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='css/bootstrap.min.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href='css/bootstrap-responsive.min.css' media='screen' rel='stylesheet' type='text/css'>
+  <link href='css/tooltip-extension.css' media='screen' rel='stylesheet' type='text/css'>
+   <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+</head>
+<body>
+    <div class="container-narrow">
+
+      <div class="jumbotron">
+        <h1>Tooltip extension</h1>
+        <p class="lead">An example of the 4 extra tooltip positions</p>
+        <a class="btn btn-large btn-success" target="_blank" href="https://github.com/andresgutgon/bootstrap-tooltip-extension">Fork me</a>
+      </div>
+
+      <hr>
+
+      <div class="row-fluid marketing">
+        <div class="span6">
+          <h4 id="top-left" data-toggle="tooltip" data-placement="top-left" data-original-title="Tooltip on top left">Top Left</h4>
+          <h4 id="bottom-left" data-toggle="tooltip" data-placement="bottom-left" data-original-title="Tooltip on bottom left">Bottom Left</h4>
+        </div>
+
+        <div class="span6">
+          <h4 id="top-right" data-toggle="tooltip" data-placement="top-right" data-original-title="Tooltip on top right" style="text-align:right;">Top Right</h4>
+          <h4 id="bottom-right" data-toggle="tooltip" data-placement="bottom-right" data-original-title="Tooltip on bottom right" style="text-align:right;">Bottom Right</h4>
+        </div>
+      </div>
+    </div> <!-- /container -->
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="javascript/bootstrap.min.js"></script>
+  <script src="../bootstrap-tooltip-extension.js"></script>
+  <script type="text/javascript">
+    $('#top-left').tooltip('show');
+    $('#top-right').tooltip('show');
+    $('#bottom-left').tooltip('show');
+    $('#bottom-right').tooltip('show');
+  </script>
+</body>
+</html>
