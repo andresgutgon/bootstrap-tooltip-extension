@@ -3,7 +3,7 @@
 With this plugin extension I try to get **4 extra positions** for twiiter bootstrap tooltip: `top-left`, `top-right`, `bottom-left` and `bottom-right`.
 
 ### Example
-![top left](https://raw.github.com/andresgutgon/bootstrap-tooltip-extension/master/example/images/top-left.png)
+![top left](https://raw.github.com/andresgutgon/bootstrap-tooltip-extension/master/example/images/example.png)
 
 
 ### Usage
