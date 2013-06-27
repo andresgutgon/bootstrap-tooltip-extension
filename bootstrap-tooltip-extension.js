@@ -6,9 +6,6 @@
  * This file extends bootstrap-tooltip.js that add
  * More tooltip positions 'bottom-left', 'bottom-right', 'top-left' and 'top-right'
  *
- * ATENTION:
- * This file is ours, but must be in vendor to be defined before bootstrap-popover.js
- *
  * =========================================================== */
 
 (function ($) {
