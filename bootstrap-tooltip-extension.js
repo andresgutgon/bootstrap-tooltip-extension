@@ -107,7 +107,7 @@
         , button = this.$element
         , arrow = this.options.template.find('.arrow')
         , arrow_width = parseInt(arrow.css("width"), 10) // This is needed we get here Ex.: '18px'
-        , new_arrow_position = button.outerWidth() / 2 - arrow_width / 2;
+        , new_arrow_position = (button.outerWidth() / 2) - (arrow_width / 2);
       switch (placement) {
       case 'bottom-left':
         arrow.css("left", new_arrow_position);
