@@ -1,7 +1,7 @@
 {
   "name": "bootstrap-tooltip-extension",
   "description": "Extension to bootstrap tooltip to add 4 extra positions",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [
     "bootstrap",
     "jquery",
