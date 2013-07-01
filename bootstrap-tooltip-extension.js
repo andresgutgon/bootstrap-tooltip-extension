@@ -78,25 +78,25 @@
         // This should behave like 'top' and 'bottom'. But they don't.
         case 'bottom-left':
           tp = {top: pos.top + pos.height + 10, left: pos.left};
-          if (this.$element.outerWidth() < 14) { // if button is small move tooltip left
+          if (this.$element.outerWidth() <= 18) { // if button is small move tooltip left
             tp.left -= 4;
           }
           break;
         case 'bottom-right':
           tp = {top: pos.top + pos.height + 10, left: pos.left + pos.width - actualWidth};
-          if (this.$element.outerWidth() < 14) { // if button is small move tooltip left
+          if (this.$element.outerWidth() <= 18) { // if button is small move tooltip left
             tp.left += 4;
           }
           break;
         case 'top-left':
           tp = {top: pos.top - actualHeight - 10, left: pos.left };
-          if (this.$element.outerWidth() < 14) { // if button is small move tooltip left
+          if (this.$element.outerWidth() <= 18) { // if button is small move tooltip left
             tp.left -= 4;
           }
           break;
         case 'top-right':
           tp = {top: pos.top - actualHeight - 10, left: pos.left + pos.width - actualWidth};
-          if (this.$element.outerWidth() < 14) { // if button is small move tooltip left
+          if (this.$element.outerWidth() <= 18) { // if button is small move tooltip left
             tp.left += 4;
           }
           break;
