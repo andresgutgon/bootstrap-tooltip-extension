@@ -118,21 +118,20 @@
       var placement = this.options.placement
         , button = this.$element
         , template = $(this.options.template)
-        , arrow = template.find('.arrow, .tooltip-arrow') // both arrows tooltip or popover
-        , arrow_width = parseInt(arrow.css("width"), 10) // This is needed we get here Ex.: '18px'
+        , arrow_width = parseInt(this.$arrow.css("width"), 10) // This is needed we get here Ex.: '18px'
         , new_arrow_position = (button.outerWidth() / 2) - (arrow_width / 2);
       switch (placement) {
       case 'bottom-left':
-        arrow.css("left", new_arrow_position);
+        this.$arrow.css("left", new_arrow_position);
         break;
       case 'bottom-right':
-        arrow.css("right", new_arrow_position);
+        this.$arrow.css("right", new_arrow_position);
         break;
       case 'top-left':
-        arrow.css("left", new_arrow_position);
+        this.$arrow.css("left", new_arrow_position);
         break;
       case 'top-right':
-        arrow.css("right", new_arrow_position);
+        this.$arrow.css("right", new_arrow_position);
         break;
       }
     }
