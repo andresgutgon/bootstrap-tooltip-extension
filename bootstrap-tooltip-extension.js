@@ -118,20 +118,21 @@
       var placement = this.options.placement
         , button = this.$element
         , template = $(this.options.template)
-        , arrow_width = parseInt(this.$arrow.css("width"), 10) // This is needed we get here Ex.: '18px'
+        , $arrow = this.tip().find(".tooltip-arrow, .arrow")
+        , arrow_width = parseInt($arrow.css("width"), 10) // This is needed we get here Ex.: '18px'
         , new_arrow_position = (button.outerWidth() / 2) - (arrow_width / 2);
       switch (placement) {
       case 'bottom-left':
-        this.$arrow.css("left", new_arrow_position);
+        $arrow.css("left", new_arrow_position);
         break;
       case 'bottom-right':
-        this.$arrow.css("right", new_arrow_position);
+        $arrow.css("right", new_arrow_position);
         break;
       case 'top-left':
-        this.$arrow.css("left", new_arrow_position);
+        $arrow.css("left", new_arrow_position);
         break;
       case 'top-right':
-        this.$arrow.css("right", new_arrow_position);
+        $arrow.css("right", new_arrow_position);
         break;
       }
     }
