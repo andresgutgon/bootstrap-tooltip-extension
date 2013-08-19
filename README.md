@@ -1,6 +1,6 @@
 ## Twitter Bootstrap tooltip extension
 
-With this plugin extension I try to get **4 extra positions** for twitter bootstrap tooltip: `top-left`, `top-right`, `bottom-left` and `bottom-right`.
+With this **plugin** extension I try to get **4 extra positions** for twitter bootstrap tooltip: `top-left`, `top-right`, `bottom-left` and `bottom-right`.
 
 ### Example
 ![top left](https://raw.github.com/andresgutgon/bootstrap-tooltip-extension/master/example/images/example.png)
