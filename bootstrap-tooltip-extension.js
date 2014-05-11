@@ -68,9 +68,6 @@
         case 'right':
           tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width};
           break;
-        case 'right':
-          tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width};
-          break;
         // Extra positions. This are not part of bootstrap
         // Extrange:
         //  I've to make top position 10px smaller in 'top-left' and 'top-right'
