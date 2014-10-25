@@ -64,7 +64,7 @@
 
         switch (placement) {
         case 'bottom':
-          tp = {top: pos.top + pos.height, left: pos.left + pos.width / 2 - actualWidth / 2};
+          tp = {top: pos.top + pos.height - arrowHeight / 2, left: pos.left + pos.width / 2 - actualWidth / 2};
           break;
         case 'top':
           tp = {top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2};
@@ -73,7 +73,7 @@
           tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth - arrowWidth};
           break;
         case 'right':
-          tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width + arrowWidth};
+          tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width - arrowWidth / 2};
           break;
         // Extra positions. This are not part of bootstrap
         // Extrange:
