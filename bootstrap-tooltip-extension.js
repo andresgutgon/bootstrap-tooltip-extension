@@ -19,6 +19,7 @@
   , show: function () {
       var $tip
         , $arrow
+        , arrowWidth
         , arrowHeight
         , pos
         , actualWidth
@@ -58,6 +59,7 @@
         actualHeight = $tip[0].offsetHeight;
 
         $arrow = this.$tip.find(".tooltip-arrow, .arrow");
+        arrowWidth = (parseInt($arrow.css('borderLeftWidth')) + parseInt($arrow.css('borderRightWidth')));
         arrowHeight = (parseInt($arrow.css('borderTopWidth')) + parseInt($arrow.css('borderBottomWidth')));
 
         switch (placement) {
@@ -68,10 +70,10 @@
           tp = {top: pos.top - actualHeight, left: pos.left + pos.width / 2 - actualWidth / 2};
           break;
         case 'left':
-          tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth};
+          tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left - actualWidth - arrowWidth};
           break;
         case 'right':
-          tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width};
+          tp = {top: pos.top + pos.height / 2 - actualHeight / 2, left: pos.left + pos.width + arrowWidth};
           break;
         // Extra positions. This are not part of bootstrap
         // Extrange:
