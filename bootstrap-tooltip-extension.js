@@ -18,6 +18,8 @@
     constructor: TooltipExtension
   , show: function () {
       var $tip
+        , $arrow
+        , arrowHeight
         , pos
         , actualWidth
         , actualHeight
@@ -55,6 +57,9 @@
         actualWidth = $tip[0].offsetWidth;
         actualHeight = $tip[0].offsetHeight;
 
+        $arrow = this.$tip.find(".tooltip-arrow, .arrow");
+        arrowHeight = (parseInt($arrow.css('borderTopWidth')) + parseInt($arrow.css('borderBottomWidth')));
+
         switch (placement) {
         case 'bottom':
           tp = {top: pos.top + pos.height, left: pos.left + pos.width / 2 - actualWidth / 2};
@@ -74,25 +79,25 @@
         //  And 10px bigger in 'bottom-left' and 'bottom-right'
         // This should behave like 'top' and 'bottom'. But they don't.
         case 'bottom-left':
-          tp = {top: pos.top + pos.height + 10, left: pos.left};
+          tp = {top: pos.top + pos.height + arrowHeight, left: pos.left};
           if (this.$element.outerWidth() <= 18) { // if button is small move tooltip left
             tp.left -= 4;
           }
           break;
         case 'bottom-right':
-          tp = {top: pos.top + pos.height + 10, left: pos.left + pos.width - actualWidth};
+          tp = {top: pos.top + pos.height + arrowHeight, left: pos.left + pos.width - actualWidth};
           if (this.$element.outerWidth() <= 18) { // if button is small move tooltip left
             tp.left += 4;
           }
           break;
         case 'top-left':
-          tp = {top: pos.top - actualHeight - 10, left: pos.left };
+          tp = {top: pos.top - actualHeight - arrowHeight, left: pos.left };
           if (this.$element.outerWidth() <= 18) { // if button is small move tooltip left
             tp.left -= 4;
           }
           break;
         case 'top-right':
-          tp = {top: pos.top - actualHeight - 10, left: pos.left + pos.width - actualWidth};
+          tp = {top: pos.top - actualHeight - arrowHeight, left: pos.left + pos.width - actualWidth};
           if (this.$element.outerWidth() <= 18) { // if button is small move tooltip left
             tp.left += 4;
           }
