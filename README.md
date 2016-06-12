@@ -1,3 +1,7 @@
+## NOT MAINTAINED
+This lib is no longer maintained. I'm using https://popper.js.org for position tooltip/popover on a screen. It doesn't manage clicks just positioning but it does very well
+
+
 ## Twitter Bootstrap tooltip extension
 
 With this **plugin** extension I try to get **4 extra positions** for twitter bootstrap tooltip: `top-left`, `top-right`, `bottom-left` and `bottom-right`.
